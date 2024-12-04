@@ -4,28 +4,28 @@ from enum import IntEnum
 
 COMMENT_FOOTER = """\n\n
 ***\n\n
-[*^(MayoCoin)*](https://www.reddit.com/r/mayocoin)*^( | )*
-[*^(MayoCoin Tipper)*](https://github.com/drelor-online/mayo-reddit-tipbot)*^( | )*
+[*^(MayoCoin)*](https://www.reddit.com/r/MayoCoin/)*^( | )*
+[*^(MayoCoin Tipper)*](https://github.com/BananoTime/mayo-reddit-tipbot)*^( | )*
 [*^(Opt Out)*](https://reddit.com/message/compose/?to=mayo_tipbot&subject=command&message=opt-out)
 """
 
 HELP = """
-Help from MayoCoin Tipper! This bot handles tips via the [MayoCoin](https://www.reddit.com/r/mayocoin) currency.
-[Visit us on GitHub](https://github.com/drelor-online/mayo-reddit-tipbot) for more information on its use and its status. Be sure to read the 
-[Terms of Service](https://github.com/drelor-online/mayo-reddit-tipbot#terms-of-service).\n
+Help from MayoCoin Tipper! This bot handles tips via the [MayoCoin](https://www.reddit.com/r/MayoCoin/) currency.
+[Visit us on GitHub](https://github.com/BananoTime/mayo-reddit-tipbot) for more information on its use and its status. Be sure to read the 
+[Terms of Service](https://github.com/BananoTime/mayo-reddit-tipbot#terms-of-service).\n
 
 If you do not accept the Terms of Service, or do not wish to participate, please respond with the text `opt-out`.\n\n
 
 MayoCoin Tipper works in two ways -- either publicly tip a user on a subreddit, or send a PM to /u/mayo_tipbot with a command below.\n\n
-To tip 2 MayoCoin on a tracked subreddit, add the following to the beginning of end of your comment:\n
+To tip 2 Mayo on a tracked subreddit, add the following to the beginning of end of your comment:\n
     !mayo 2
 To tip anywhere on reddit, tag the bot as such (it won't post on these subreddits, but it will PM the users):\n
     /u/mayo_tipbot 2
-You can tip any amount above the program minimum of 1 MayoCoin.\n\n
+You can tip any amount above the program minimum of 1 Mayo.\n\n
 
 For PM commands, create a new message with any of the following commands (be sure to remove the quotes, '<'s and '>'s):\n
     'create' - Create an account for yourself
-    'send <amount or all> <user/address>' - Send MayoCoin to a reddit user or an address
+    'send <amount or all> <user/address>' - Send Mayo to a reddit user or an address
     'balance' or 'address' - Retrieve your account balance
     'silence <yes/no>' - (default 'no') Prevents the bot from sending you tip notifications or tagging in posts 
     'history <optional: number of records>' - Retrieves tipbot history
@@ -33,37 +33,36 @@ For PM commands, create a new message with any of the following commands (be sur
     'opt-out' - Disables your account
     'opt-in' - Re-enables your account 
     'help' - Get this help message\n
-For example, if you wanted to send 25 MayoCoin to user `drelor`, reply:\n
-    send 25 drelor\n    
-If you have any questions or bug fixes, please reach out on the [MayoCoin subreddit](https://www.reddit.com/r/mayocoin).\n
-The MayoCoin tip bot is based on the Ananos tip bot by u/rambamtyfus.  Check out [Ananos subreddit](https://reddit.com/r/ananos).\n
-The Ananos tip bot is based on the Banano tip bot. Check out the [Banano subreddit](https://reddit.com/r/banano) as well!"""
+For example, if you wanted to send 25 Mayo to user `mrnosock`, reply:\n
+    send 25 mrnosock\n    
+If you have any questions or bug fixes, please reach out on the [Mayo subreddit](https://reddit.com/r/MayoCoin).\n
+The Mayo tip bot is based on the Ananos tipbot. Check out the [Ananos subreddit](https://www.reddit.com/r/Ananos) as well!"""
 
 WELCOME_CREATE = """
-Welcome to MayoCoin Tipper, a reddit tip bot which allows you to tip and send the [MayoCoin](https://www.reddit.com/r/mayocoin) currency to your favorite redditors! 
+Welcome to MayoCoin Tipper, a Reddit tip bot which allows you to tip and send the [MayoCoin](https://reddit.com/r/MayoCoin) currency to your favorite redditors! 
 Your account is **active**.\nDeposit MayoCoin by sending it to the address `%s` using your MayoCoin deposit memo `%s`. By using this service, you agree 
-to the [Terms of Service](https://github.com/drelor-online/mayo-reddit-tipbot#terms-of-service).\n\n
+to the [Terms of Service](https://github.com/BananoTime/mayo-reddit-tipbot#terms-of-service).\n\n
 
-If you do not accept the Terms of Service, or do not with to participate, please respond with the text `opt-out`.\n\n
+If you do not accept the Terms of Service, or do not wish to participate, please respond with the text `opt-out`.\n\n
 
 ***\n\n
 MayoCoin Tipper can be used in two ways. The most common is to tip other redditors publicly by replying to a comment on a tracked subreddit. 
-To tip someone 2 MayoCoin, reply to their message with:\n\n
+To tip someone 2 Mayo, reply to their message with:\n\n
 ```!mayo 2```\n\n
 To tip a redditor on any subreddit, tag the bot instead of issuing a command:\n\n
 ```/u/mayo_tipbot 2```\n\n
 ***\n\n
 There are also PM commands by [messaging](https://reddit.com/message/compose/?to=mayo_tipbot&subject=command&message=type_command_here) /u/mayo_tipbot. Remove any quotes, <'s and >'s.\n\n
 ```send <amount> <valid_stellar_address>``` Withdraw to a Stellar address (must have a trustline with MayoCoin).\n\n
-```send <amount> <redditor username>``` Send Ananaos to another redditor.\n\n
+```send <amount> <redditor username>``` Send MayoCoin to another redditor.\n\n
 ```balance``` Check your account balance.\n\n
 ```help``` Receive an in-depth help message.\n\n
 """
 
 WELCOME_TIP = """
-Welcome to MayoCoin Tipper, a reddit tip bot which allows you to tip and send the [MayoCoin](https://www.reddit.com/r/mayocoin) Currency to your favorite redditors! 
-You have just received a MayoCoin tip in the amount of %s MayoCoin.\n\n
-By using this service, you agree to the [Terms of Service](https://github.com/drelor-online/mayo-reddit-tipbot#terms-of-service).\n\n
+Welcome to Stellar MayoCoin Tipper, a reddit tip bot which allows you to tip and send the [MayoCoin](https://reddit.com/r/MayoCoin) Currency to your favorite redditors! 
+You have just received a MayoCoin tip in the amount of %s Mayo.\n\n
+By using this service, you agree to the [Terms of Service](https://github.com/BananoTime/mayo-reddit-tipbot#terms-of-service).\n\n
 
 If you do not accept the Terms of Service, or do not with to participate, please respond with the text `opt-out`.\n\n
 ***\n\n
@@ -74,43 +73,43 @@ To tip a redditor on any subreddit, tag the bot instead of issuing a command:\n\
 ```/u/mayo_tipbot 2```\n\n
 ***\n\n
 There are also PM commands by [messaging](https://reddit.com/message/compose/?to=mayo_tipbot&subject=command&message=type_command_here) /u/mayo_tipbot. Remove any quotes, <'s and >'s.\n\n
-```send <amount> <valid_stellar_address>``` Withdraw your MayoCoin to your own Stellar address (must have a trustline with MayoCoin).\n\n
-```send <amount> <redditor username>``` Send MayoCoin to another redditor.\n\n
+```send <amount> <valid_stellar_address>``` Withdraw your Mayo to your own Stellar address (must have a trustline with MayoCoin).\n\n
+```send <amount> <redditor username>``` Send Mayo to another redditor.\n\n
 ```balance``` Check your account balance.\n\n
 ```help``` Receive an in-depth help message.\n\n
-To deposit MayoCoin in your tip bot account, send some to the tip bot address: `%s`. Be sure to specify your deposit memo `%s`!\n
+To deposit MayoCoin in your tip bot account, send some to the tip bot address: `%s`. Be sure to specify your deposit memo `%s`.\n
 Do not deposit MayoCoin directly from an exchange. 
 """
 
 NEW_TIP = """
-Somebody just tipped you %s MayoCoin! Your juicy new account balance is:\n\n
-**%s MayoCoin**\n\n
+Somebody just tipped you %s Stellar MayoCoin! Your creamy new account balance is:\n\n
+**%s Mayo**\n\n
 To turn off these notifications, reply with "silence yes".
 """
 
 SUBJECTS = {
-    "first_tip": "MayoCoin Tipper - Congrats on receiving your first MayoCoin Tip!",
-    "new_tip": "MayoCoin Tipper - You just received a new MayoCoin tip!",
-    "deposit": "MayoCoin Tipper - Deposit successful",
-    "help": "MayoCoin Tipper - Help",
-    "balance": "MayoCoin Tipper - Account Balance",
-    "minimum": "MayoCoin Tipper - Tip Minimum",
-    "create": "MayoCoin Tipper - Create",
-    "send": "MayoCoin Tipper - Send",
-    "history": "MayoCoin Tipper - History",
-    "silence": "MayoCoin Tipper - Silence",
-    "subreddit": "MayoCoin Tipper - Subreddit",
-    "opt-out": "MayoCoin Tipper - Opt Out",
-    "opt-in": "MayoCoin Tipper - Opt In",
-    "success": "MayoCoin Tipper - Your Tip Was Successful",
-    "failure": "MayoCoin Tipper - You Tip Did Not Go Through",
-    "convert": "MayoCoin Tipper - Your Currency Conversion",
-    "stats": "MayoCoin Tipper - Statistics"
+    "first_tip": "Mayo Tipper - Congrats on receiving your first Mayo Tip!",
+    "new_tip": "Mayo Tipper - You just received a new Mayo tip!",
+    "deposit": "Mayo Tipper - Deposit successful",
+    "help": "Mayo Tipper - Help",
+    "balance": "Mayo Tipper - Account Balance",
+    "minimum": "Mayo Tipper - Tip Minimum",
+    "create": "Mayo Tipper - Create",
+    "send": "Mayo Tipper - Send",
+    "history": "Mayo Tipper - History",
+    "silence": "Mayo Tipper - Silence",
+    "subreddit": "Mayo Tipper - Subreddit",
+    "opt-out": "Mayo Tipper - Opt Out",
+    "opt-in": "Mayo Tipper - Opt In",
+    "success": "Mayo Tipper - Your Tip Was Successful",
+    "failure": "Mayo Tipper - You Tip Did Not Go Through",
+    "convert": "Mayo Tipper - Your Currency Conversion",
+    "stats": "Mayo Tipper - Statistics"
 }
 
 MINIMUM = {
     "set_min": "Updating tip minimum to %s",
-    "below_program": "Did not update. The amount you specified is below the program minimum of %s MayoCoin.",
+    "below_program": "Did not update. The amount you specified is below the program minimum of %s Mayo.",
     "parse_error": "I couldn't parse your command. I was expecting 'minimum "
     "<amount>'. Be sure to check your spacing.",
 }
@@ -142,32 +141,32 @@ class StatusResponse(IntEnum):
 # full responses
 SEND_TEXT = {
     StatusResponse.SENT_TO_EXISTING_USER: (
-        "Sent ```%s MayoCoin``` to /u/%s"
+        "Sent ```%s Stellar Mayo``` to /u/%s"
     ),
     StatusResponse.SENT_TO_ADDRESS: (
-        "Sent ```%s MayoCoin``` to %s"
+        "Sent ```%s Stellar Mayo``` to %s"
     ),
     StatusResponse.SENT_TO_NEW_USER: (
         "Creating a new account and "
-        "sent ```%s MayoCoin``` to /u/%s."
+        "sent ```%s Stellar Mayo``` to /u/%s."
     ),
     StatusResponse.DEPOSIT: (
-        "A deposit of ```%s MayoCoin``` was sent to you (/u/%s)."
+        "A deposit of ```%s Stellar Mayo``` was sent to you (/u/%s)."
     ),    
     StatusResponse.NO_ACCOUNT: (
-        "You don't have an account yet. Please PM me with `create` in the body to "
+        "You don't have an account yet. Please [PM me](https://reddit.com/message/compose/?to=mayo_tipbot&subject=command&message=create) with `create` in the body to "
         "make an account."
     ),
-    StatusResponse.SEND_COMMAND_INCORRECT: "You must specify an amount and a user, e.g. `send 1 mayo_tipbot`.",
+    StatusResponse.SEND_COMMAND_INCORRECT: "You must specify an amount and a user, e.g. `send 1 mrnosock`.",
     StatusResponse.SEND_COMMAND_TOO_MANY_ARGS: "Too many arguments specified.",
     StatusResponse.CANNOT_PARSE_AMOUNT: "I could not read the amount. Is '%s' a number?",
-    StatusResponse.BELOW_PROGRAM_MINIMUM: "Program minimum is %s MayoCoin.",
+    StatusResponse.BELOW_PROGRAM_MINIMUM: "Program minimum is %s Mayo.",
     StatusResponse.BELOW_SUB_MINIMUM: "Your tip is below the minimum for this sub.",
     StatusResponse.INSUFFICIENT_FUNDS: "You have insufficient funds. Please check your balance.",
     StatusResponse.INVALID_USER_OR_ADDRESS: "'%s' is neither a redditor nor a valid address.",
-    StatusResponse.USER_OPTED_OUT: "Sorry, the user has opted-out of using MayoCoin Tipper.",
+    StatusResponse.USER_OPTED_OUT: "Sorry, the user has opted-out of using Mayo Tipper.",
     StatusResponse.CANNOT_SEND_TO_YOURSELF: "You cannot send to yourself.",
-    StatusResponse.SEND_TO_ADDRESS_FAILED: "The amount could not be sent to the specified address. Make sure you have a trustline with MayoCoin and enough XLM.",
+    StatusResponse.SEND_TO_ADDRESS_FAILED: "The amount could not be sent to the specified address. Make sure you have a trustline with Mayo and enough XLM.",
     StatusResponse.NOT_ENOUGH_XLM: "Sorry, my account doesn't have enough XLM to pay the withdrawal fee at this time. Please consider donating some.",
     StatusResponse.NO_TRUSTLINE: "The account you specified does not have a trustline with MayoCoin. This is required by the Stellar network."
 }
@@ -186,8 +185,8 @@ SUBREDDIT = {
     "not_mod": "You are not a moderator of /r/%s.",
     "not_maintainer": "You are not a bot maintainer.",
     "minimum": "Sucessfully set your /r/%s minimum to %s, active immediately.",
-    "deactivate": "Within 5 minutes, tipping will be deactivated in your subreddit %s.",
-    "activate": "Within 5 minutes, the MayoCoin Tipper response in your Subreddit will be set to %s.",
+    "deactivate": "Within 10 minutes, tipping will be deactivated in your subreddit %s.",
+    "activate": "Within 10 minutes, the Mayo Tipper response in your Subreddit will be set to %s.",
     "error": "There was something wrong with your activate or minimum command.",
     "all": "Here is a list of every subreddit and its status:\n\nName, Status, Minimum\n\n",
     "one": "Here are the settings for subreddit /r/%s:\n\nName, Status, Minimum\n\n",
@@ -216,8 +215,8 @@ ALREADY_EXISTS = (
 
 BALANCE = (
     "Your balance is:\n\n"
-    "**%s MayoCoin**\n\n"
-    "To deposit MayoCoin in your tip bot account, send some to the tip bot address: `%s`. Be sure to specify your deposit memo `%s`!\n\n"
+    "**%s Mayo**\n\n"
+    "To deposit MayoCoin in your tip bot account, send some to the tip bot address: `%s`. Be sure to specify your deposit memo `%s`.\n\n"
     "Do not deposit MayoCoin directly from an exchange.\n"
 )
 

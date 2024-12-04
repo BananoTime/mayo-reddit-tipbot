@@ -1,27 +1,31 @@
 
+
+
+
+
+  # MayoCoin Stellar Reddit tip bot 
   
-
-# MayoCoin Reddit Tip Bot 
-
-  
-
-...is a reddit tipping service to easily give MayoCoin to your favorite Redditors! MayoCoin is an edible, spreadable, universal crypto-condiment based on the Stellar network. Before using MayoCoin Tipper, please take a look at the [Terms of Service](https://github.com/drelor-online/mayo-reddit-tipbot#terms-of-service).
-
-  
-
-  
-
-It is a fork and modification of the [Ananos (Stellar) Reddit Tipbot by swartbeens](https://github.com/swartbeens/ananos-stellar-reddit-tipbot) which is a fork and modification of the [Banano](https://banano.cc) reddit tip bot created by /u/bbedward - which is available on [GitHub](https://github.com/BananoCoin/banano_reddit_tipbot).
+New bot switch date: 02 Dec 24. Use 01 Dec 24 for old balances
 
   
 
-  
-
-### To get started with the MayoCoin Tip Bot, either:
+...is a reddit tipping service to easily give (Stellar) MayoCoin to your favorite redditors! [MayoCoin](https://mayocoin.eu.org/) is a feeless, instant, rich in creamy goodness, cryptocurrency. Before using MayoCoin Tipper, please take a look at the [Terms of Service](https://github.com/BananoTime/mayo-reddit-tipbot#terms-of-service).
 
   
 
-A) **Create an account** by [sending a message](https://reddit.com/message/compose/?to=mayo_tipbot&subject=command&message=create) to /u/mayo_tipbot with 'create' or 'register' in the message body.
+It is a fork of and modification of the [Ananos](https://ananos.tk/) reddit tip bot created by /u/RamBamTyfus & [swartbeens](https://github.com/swartbeens) - which is available on [GitHub](https://github.com/swartbeens/ananos-stellar-reddit-tipbot).
+
+Which is a fork and modification of the [Banano](https://banano.cc) reddit tip bot created by /u/bbedward - which is available on [GitHub](https://github.com/BananoCoin/banano_reddit_tipbot).
+
+  
+
+  
+
+### To get started with the MayoCoin tip bot, either:
+
+  
+
+A) **Create an account** by [sending a message](https://reddit.com/message/compose/?to=/u/mayo_tipbot&subject=command&message=create) to /u/mayo_tipbot with 'create' or 'register' in the message body.
 
   
 
@@ -29,11 +33,11 @@ A) **Create an account** by [sending a message](https://reddit.com/message/compo
 
   
 
-B) **Receive a MayoCoin tip** from a fellow redditor, and you will automatically have an account made! Be sure to activate it afterwards by [sending a message](https://reddit.com/message/compose/?to=mayo_tipbot&subject=command&message=create) to /u/mayo_tipbot.
+B) **Receive a MayoCoin tip** from a fellow redditor, and you will automatically have an account made! Be sure to activate it afterwards by [sending a message](https://reddit.com/message/compose/?to=/u/mayo_tipbot&subject=command&message=create) to /u/mayo_tipbot.
 
   
 
-Once you have funds in your account, you can tip other redditors, or send to any MayoCoin (Stellar) address via PM to /u/mayo_tipbot.
+Once you have funds in your account, you can tip other redditors, or send to any MayoCoin address via PM to /u/mayo_tipbot.
 
   
 
@@ -53,25 +57,25 @@ On supported subreddits, you can send a tip like this:
 
   
 
-`!mayo 1 This is great!`
+`!Mayo 1 `
 
   
 
   
 
-This will tip a redditor 1 MayoCoin. !mayo <amount> must be the first thing in your message OR the last thing. Such, this is also a valid tip:
+This will tip a redditor 1 MayoCoin. !Mayo <amount> must be at the beginning of your message OR at the end. For example, this is also a valid tip:
 
   
 
   
 
-`This is great! !mayo 1`
+`It's like magic !Mayo 1`
 
   
 
   
 
-Or from anywhere on reddit, you can tip a commenter by mentioning the tip bot:
+Or from anywhere on Reddit, you can tip a commenter by mentioning the tip bot:
 
   
 
@@ -94,32 +98,32 @@ If the subreddit is a friendly subreddit, the bot will respond with a message. I
 
   
 
-The MayoCoin tip bot also works by PM. [Send a message](https://reddit.com/message/compose/?to=mayo_tipbot&subject=command&message=type_command_here) to /u/mayo_tipbot for a variety of actions.
+The MayoCoin tip bot also works by PM. [Send a message](https://reddit.com/message/compose/?to=/u/mayo_tipbot&subject=command&message=command) to /u/mayo_tipbot for a variety of actions.
 
   
 
   
 
-To send 1 MayoCoin to drelor, include this text in the message body:
+To send 1 MayoCoin to MrNoSock, include this text in the message body:
 
   
 
   
 
-`send 1 drelor`
+`send 1 MrNoSock`
 
   
   
 
   
 
-To send 1 MayoCoin to Stellar address G...., include this text in the message body:
+To send 1 MayoCoin to Stellar address GDTAHVJCTBXL3CK5NML6ZGRLWHYIIM4C5C43T22CP5SO7BJ3SWMLPDM7, include this text in the message body:
 
   
 
   
 
-`send 1 G...`
+`send 1 GDTAHVJCTBXL3CK5NML6ZGRLWHYIIM4C5C43T22CP5SO7BJ3SWMLPDM7`
 
   
 
@@ -131,11 +135,11 @@ or send all your balance:
 
   
 
-`send all G...`
+`send all GDTAHVJCTBXL3CK5NML6ZGRLWHYIIM4C5C43T22CP5SO7BJ3SWMLPDM7`
 
   
 
-*Note that the address you are sending to must have a trustline with the MayoCoin address on Stellar (GC5TLOYRAEXMHSJ5H3CZYZVT22IZSDANO2COJLSCSVMZZRS7QUPXM6QT) and you cannot send from an exchange wallet.*
+*Note that the address you are sending to must have a trustline with MayoCoin on Stellar (GC5TLOYRAEXMHSJ5H3CZYZVT22IZSDANO2COJLSCSVMZZRS7QUPXM6QT) and you cannot send from an exchange wallet.*
 
   
 
@@ -150,7 +154,7 @@ There are many other commands.
 'create' - Create a new account if one does not exist
 'help' - Get this help message 
 'history <optional: number of records>' - Retrieves tip bot commands.  
-'send <amount or all, optional: Currency> <user/address>' - Send MayoCoin to a reddit user or an address  
+'send <amount or all, optional: Currency> <user/address>' - Send MayoCoin to a Reddit user or an address  
 'silence <yes/no>' - (default 'no') Prevents the bot from sending you tip notifications or tagging in posts  
 'subreddit <subreddit> <'activate'/'deactivate'> <option>' - Subreddit Moderator Controls - Enabled Tipping on Your Sub (`silent`, `full`)  
 'opt-out' - Disables your account.  
@@ -163,19 +167,19 @@ There are many other commands.
 
   
 
-If you are a moderator of a subreddit, and would like to tipping to your sub, use the `subreddit` command. For example, to activate tipping on the r/ananos subreddit, I send a PM to the bot saying:
+If you are a moderator of a subreddit, and would like to enable tipping to your sub, use the `subreddit` command. For example, to activate tipping on the r/MayoCoin subreddit, I send a PM to the bot saying:
 
   
 
   
 
-`subreddit ananos activate`
+`subreddit MayoCoin activate`
 
   
 
   
 
-This will allow the bot to look for !mayo commands and respond to posts in that subreddit.
+This will allow the bot to look for !Mayo commands and respond to posts in that subreddit.
 
   
 
@@ -185,7 +189,7 @@ This will allow the bot to look for !mayo commands and respond to posts in that 
 
   
 
-`subreddit ananos activate silent`
+`subreddit MayoCoin activate silent`
 
   
   
@@ -200,7 +204,7 @@ To deactivate, simply PM
 
   
 
-`subreddit ananos deactivate`
+`subreddit MayoCoin deactivate`
 
   
 
@@ -208,24 +212,23 @@ To deactivate, simply PM
 
 ### Here's a few other great links:
 
+[MayoCoin Discord](https://discord.gg/bQ9pHnV6MR) -- Offical Discord Server
 
-[MayoCoin Subreddit](https://reddit.com/r/mayocoin) -- Post any questions about MayoCoin  
-  
+[MayoCoin Subreddit](https://reddit.com/r/MayoCoin) -- Post any questions about MayoCoin
 
-[Ananos Subreddit](https://reddit.com/r/ananos) -- Post any questions about Ananos
-
-  
+[Ananos Subreddit](https://reddit.com/r/ananos) -- Post any questions about Ananos 
 
 [Banano Subreddit](https://reddit.com/r/banano) -- Post any questions about Banano
 
+[Ananos/Manango Marketplace](https://www.reddit.com/r/AnanosMarketplace) -- Trade & Swap Ananos, MayoCoin, Or TODD Tokens
+
+[Ananos Tipper GitHub](https://github.com/swartbeens/ananos-stellar-reddit-tipbot) -- This software is open source!
+
   
 
-[Banano Tipper GitHub](https://github.com/BananoCoin/banano_reddit_tipbot) -- This software is open source!
+[Ananos](https://ananos.tk/) -- Official Anano website
 
-  
-
-[BANANO](https://banano.cc) -- The Official BANANO website
-
+[MayoCoin](https://mayocoin.eu.org/) -- Official MayoCoin website
   
   
   
@@ -262,7 +265,7 @@ To deactivate, simply PM
 
   
 
-## Why does the message have to start or end with !mayo<amount>?
+## Why does the message have to start or end with !Mayo <amount>?
 
   
 
@@ -285,7 +288,7 @@ This is to prevent unintentional tips! If the program simply scanned the entire 
   
 Unfortunately, Stellar requires fees to send transactions. The tipping happens off-chain to circumvent this. However, the bot needs to pay a small amount of XLM at each withdrawal. 
 You can prevent withdrawal problems and support the bot by donating a little XLM to the bot's address: 
-GARDBQHEUURLOWHEAC6GFIHYWHGCVJBH4V3REG2CD465GP3LDOVSSDO5.
+GCAVWXBD3FBJOUEHL7BH2LYLMX4KJ4O7EM6D5IAEAYFND6IDMUUWGO4O.
 
   
 
@@ -299,7 +302,7 @@ If the address isn't affiliated with a Redditor, **No.**
 
   
 
-## I sent a tip to the wrong redditor. Can I get it back?
+## I sent a tip to the wrong Redditor. Can I get it back?
 
   
 
@@ -319,11 +322,11 @@ Probably not. It's most likely the bot was temporarily disconnected. If a comman
 
   
 
-## I found a bug or I have a concern. Question Mark?
+## I found a bug or I have a concern?
 
   
 
-Post it on the [MayoCoin subreddit](https://reddit.com/r/mayocoin) .
+Post it on the [MayoCoin subreddit](https://reddit.com/r/MayoCoin) .
 
   
 
@@ -341,7 +344,7 @@ If a reddit tip is a reply to a reply, it's better to keep a short message with 
 
   
 
-* 110 - You must specify an amount and a user, e.g. `send 1 mayo_tipbot`.
+* 110 - You must specify an amount and a user, e.g. `send 1 /u/mayo_tipbot`.
 
   
 
